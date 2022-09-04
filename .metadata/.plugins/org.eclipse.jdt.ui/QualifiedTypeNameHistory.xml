@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.gec.controller.UserController"/>
+<fullyQualifiedTypeName name="org.apache.catalina.User"/>
+<fullyQualifiedTypeName name="com.gec.mapper.UserMapper"/>
+<fullyQualifiedTypeName name="com.gec.pojo.UserExample"/>
+<fullyQualifiedTypeName name="com.gec.pojo.UserExample.Criteria"/>
+<fullyQualifiedTypeName name="com.gec.service.UserService"/>
+<fullyQualifiedTypeName name="com.gec.pojo.User"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="cn.web.auction.mapper.UserMapper"/>
+<fullyQualifiedTypeName name="cn.web.auction.pojo.UserExample"/>
+<fullyQualifiedTypeName name="cn.web.auction.pojo.UserExample.Criteria"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="cn.web.auction.service.UserService"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="cn.web.auction.pojo.AuctionRecord"/>
+<fullyQualifiedTypeName name="cn.web.auction.pojo.User"/>
+<fullyQualifiedTypeName name="cn.web.auction.pojo.Auction"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="cn.web.auction.mapper.AuctionCustomMapper"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+</qualifiedTypeNameHistroy>

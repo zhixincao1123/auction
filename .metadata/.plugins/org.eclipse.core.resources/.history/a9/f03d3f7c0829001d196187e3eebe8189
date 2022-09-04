@@ -1,0 +1,53 @@
+package cn.web.auction.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+
+import cn.web.auction.pojo.Auction;
+import cn.web.auction.service.AuctionService;
+
+@Controller
+@RequestMapping("/auction")
+public class AuctionController {
+	
+@Autowired
+AuctionService auctionService;
+
+public static final int PAGE_SIZE=3;
+
+@RequestMapping("/queryAuctions")
+public ModelAndView queryAuctions(@RequestParam(defaultValue = "1",required = false,value ="pageNum" ) int pageNum,@ModelAttribute("condition")Auction condition) {
+	
+	ModelAndView mv=new ModelAndView();
+	//pageNum:当前页码 pageSize:每页显示的数据条款
+PageHelper.startPage(pageNum, PAGE_SIZE);
+	List<Auction> auctionList = auctionService.findAuctions(condition);
+	
+	mv.addObject("auctionList", auctionList);
+	PageInfo pageInfo=new PageInfo<>(auctionList);//泛型不用指定 <>即<>内
+	
+	mv.addObject("pageInfo", pageInfo);//值就是这个pageInfo对应项
+	//给mv指定要渲染的页面
+	//mv.addObject("condition", condition);
+	mv.setViewName("index");
+	
+	return mv;
+	
+}
+//竞拍详情页
+@RequestMapping("/toDetail/{auctionid}")
+
+public ModelAndView toDetail(@PathVariable int auctionid) {
+	auctionService.findAuctionAndRecordListById(auctionid);
+}
+}

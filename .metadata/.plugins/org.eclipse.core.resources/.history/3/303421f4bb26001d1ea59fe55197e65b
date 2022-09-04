@@ -1,0 +1,12 @@
+package cn.web.auction.service;
+
+import cn.web.auction.pojo.User;
+
+public interface UserService {
+
+	//先来完成筛选的操作
+	public User login(String username,String userpassword);
+	//获取List对象中的第一个操作//直接进行非空判断 获取List集合中的元素
+
+	public void addUser();
+}

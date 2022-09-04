@@ -1,0 +1,5 @@
+package cn.web.auction.mapper;
+
+public interface AuctionCustomMapper {
+
+}

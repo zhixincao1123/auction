@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\项目\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2779251843.index
+\MyAuctionDemo1\src
+D:\项目\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2575177999.index
+\MyActionDemo1\src
